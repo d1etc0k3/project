@@ -82,7 +82,7 @@ export default function Home() {
       </div>
 
       <div className="journey-container">
-        <h2 className="journey-heading">Our Journey</h2>
+        <h2 className="journey-heading">Our Journey🤍</h2>
       </div>
 
       {/* Timeline */}
@@ -118,18 +118,25 @@ export default function Home() {
         <h2 className="yesno">So,will you be my girlfriend?</h2>
         <div className="button-container">
         <button className="yes-button" onClick={() => router.push("/letter")}>YES</button>
-  <button
-    className="no-button"
-    onMouseEnter={() => {
-      const randomX = Math.floor(Math.random() * 300) - 150; // Moves between -150px to +150px
-      const randomY = Math.floor(Math.random() * 300) - 150;
-      document.documentElement.style.setProperty("--random-x", `${randomX}px`);
-      document.documentElement.style.setProperty("--random-y", `${randomY}px`);
-    }}
-  >
-    NO
-  </button>
+        <button
+  className="no-button"
+  onMouseEnter={() => {
+    const randomX = Math.floor(Math.random() * 300) - 150; // Moves between -150px to +150px
+    const randomY = Math.floor(Math.random() * 300) - 150;
+    document.documentElement.style.setProperty("--random-x", `${randomX}px`);
+    document.documentElement.style.setProperty("--random-y", `${randomY}px`);
+  }}
+  onClick={() => {
+    const randomX = Math.floor(Math.random() * 300) - 150;
+    const randomY = Math.floor(Math.random() * 300) - 150;
+    document.documentElement.style.setProperty("--random-x", `${randomX}px`);
+    document.documentElement.style.setProperty("--random-y", `${randomY}px`);
+  }}
+>
+  NO
+</button>
 </div>
+
       </div>
 
       <style jsx>{`
