@@ -1,0 +1,56 @@
+/* Title Style */
+.title {
+  font-size: 15em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h3 {
+  padding-top: 0.25em;
+  font-size: 20px;
+  color: rgb(226, 43, 192);
+  border: 2px solid rgb(226, 43, 192); /* Border with same color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Optional padding inside the border */
+}
+
+/* Timeline Element */
+.vertical-timeline-element-content {
+  /* margin-top: ; */
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+  max-width: 500px;
+  /* max-height: 500px; */
+}
+
+/* Solid White Circle on the Timeline */
+.vertical-timeline-element-icon {
+  background-color: white !important; /* Ensuring white background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Making it circular */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding a slight shadow */
+}
+
+.vertical-timeline-element-icon::before {
+  content: "❤️"; /* Unicode heart emoji */
+  font-size: 24px; /* Adjust size as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Bring Text Closer to Circle */
+.vertical-timeline-element-content {
+  margin-left: 30px; /* Adjust this value to bring text closer */
+}
+.timeline-image {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 5px;
+}
