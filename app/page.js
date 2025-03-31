@@ -29,7 +29,7 @@ export default function Home() {
     const texts = isGroup1 ? group1Texts : group2Texts;
     let currentTextContent = texts[textIndex];
 
-    const typingSpeed = isGroup1 ? 100 : 45;
+    const typingSpeed = isGroup1 ? 100 : 50;
 
     const typeBackspaceEffect = setInterval(() => {
       if (direction === "typing") {
