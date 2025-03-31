@@ -4,7 +4,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Khel</title>
+        <title>Khushipaglu</title>
         <style jsx global>{`
           body {
             margin: 0;
